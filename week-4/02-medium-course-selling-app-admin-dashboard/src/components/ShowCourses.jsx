@@ -27,7 +27,7 @@ function ShowCourses() {
         getCourses(setCourses);
         const timeout = setInterval(() => {
             getCourses(setCourses);
-        }, 1000);
+        }, 5000);
         return () => clearInterval(timeout);
     }, [])
     return <div>

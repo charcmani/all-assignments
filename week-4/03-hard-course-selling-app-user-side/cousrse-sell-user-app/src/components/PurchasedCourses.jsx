@@ -25,7 +25,7 @@ function PurchasedCourses() {
     const navigate = useNavigate();
     React.useEffect(()=>{
         listPurchase(setPurchased);
-        const timeout = setInterval(()=>{listPurchase(setPurchased);},2000);
+        const timeout = setInterval(()=>{listPurchase(setPurchased);},5000);
         return ()=>clearInterval(timeout);
     },[]);
     return <div>
